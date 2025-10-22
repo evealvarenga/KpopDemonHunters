@@ -34,7 +34,8 @@ nav {
 }
 
 /*img{
-    min-height: 30%;
+    max-height: 70%;
+    height: auto;
 }*/
 
 footer{
@@ -93,6 +94,56 @@ td {
 .capsula:hover{
     box-shadow: 5px 5px #6d4f7a;
     transition: all 0.3s linear;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container {
+  position: relative;
+  width: 33%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #c955b9;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+  -ms-transform: translate(-25%, -25%);
+}
+
+figcaption{
+    text-align: center;
+    margin: 15px;
+    font-family: var(--font-main) !important;
+    font-weight: normal;
+}
+
+.personajes{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap;
 }
 
 :root {
