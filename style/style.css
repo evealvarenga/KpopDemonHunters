@@ -186,3 +186,48 @@ a:hover{
   background: #df64ac;
   border-radius: 10px;
 }
+
+
+/* ----------- QUOTES -------------*/
+
+.quote {
+    max-width: 75%;
+    font-style: italic;
+    margin: auto;
+    margin-top: 20px !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quote cite{
+    margin-left:60%;
+    margin-bottom: 1em;
+    font-size: 13px;
+    width: 60%;
+    color: hsl(288, 69%, 32%);
+}
+
+.quote p::before, .quote  p::after {
+    position: absolute;
+    font-size: 3em;
+    font-weight: bold;
+    color: hsl(288, 69%, 32%);
+}
+
+.quote p {
+    position: relative;
+}
+
+.quote p::after {
+    content: "”";
+    bottom: -1rem;
+    right: -1.5rem;
+    line-height: 1;
+}
+
+.quote  p::before {
+    content: "“";
+    top: -1rem;
+    left: -1.5rem;
+    line-height: 1;
+}
