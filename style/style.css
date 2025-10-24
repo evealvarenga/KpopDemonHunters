@@ -146,6 +146,21 @@ figcaption{
     flex-wrap: wrap;
 }
 
+.video{
+    display: inline-flexbox;
+    flex-wrap: wrap;
+}
+
+.video img {
+    border-radius: 10px;
+    max-width: 20%;
+    margin: 10px;
+}
+
+.home{
+    display: flex;
+}
+
 :root {
     --font-main: "KPDH Main Font";
     --font-header: "KPDH Header Font";
