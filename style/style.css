@@ -119,6 +119,8 @@ td {
 
 .text {
   color: white;
+  font-size: 12px;
+  
   position: absolute;
   overflow: hidden;
   top: 25%;
@@ -156,29 +158,6 @@ figcaption{
     display: flex;
 }
 
-.divisor{
-    display: flex;
-    gap: 15px;
-    flex-wrap:wrap;
-}
-
-.divisorul{
-    flex: 3;
-    min-width: 30%;
-    max-width: 60%;
-     
-}
-
-
-
-.divisorimg img{
-    height: auto;
-    max-width: 100%;
-    min-width: 70%;
-}
-
-
-
 
 /* --------- IFRAME ---------*/
 iframe{
@@ -189,8 +168,8 @@ iframe{
 
 /* ---------- LINKS --------*/
 a:link{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
+    font-family: var(--font-subheader) !important;
+    font-size: 14px;
     color: #cf4ba8;
     text-decoration: none;
 }
@@ -203,6 +182,30 @@ a:focus{
 a:hover{
     color: #844bcf;
     transition: all 1s linear;
+}
+
+a[inert]{
+    text-decoration-line: line-through;
+}
+
+/*---------- Figures ------------*/
+
+.figureleft{
+    margin: 0.5em 1.4em 1.3em 0;
+    clear: left;
+    float: left;
+}
+
+.figureleft img, .figureright img{
+    height: auto;
+    max-width: 100%;
+    min-width: 70%;
+}
+
+.figureright{
+    margin: 0.5em 0 1.3em 1.4em;
+    clear: right;
+    float: right;
 }
 
 /* -------- Fuentes -----------*/
