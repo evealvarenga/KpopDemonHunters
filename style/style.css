@@ -33,10 +33,6 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*img{
-    min-height: 30%;
-}*/
-
 footer{
     text-align: center;
     padding: 15px;
@@ -95,6 +91,124 @@ td {
     transition: all 0.3s linear;
 }
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container {
+  position: relative;
+  width: 33%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #c955b9;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 12px;
+  
+  position: absolute;
+  overflow: hidden;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+  -ms-transform: translate(-25%, -25%);
+}
+
+figcaption{
+    text-align: center;
+    margin: 15px;
+    font-family: var(--font-main) !important;
+    font-weight: normal;
+}
+
+.personajes{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.video{
+    display: inline-flexbox;
+    flex-wrap: wrap;
+}
+
+.video img {
+    border-radius: 10px;
+    max-width: 20%;
+    margin: 10px;
+}
+
+.home{
+    display: flex;
+}
+
+
+/* --------- IFRAME ---------*/
+iframe{
+    width: 88%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
+/* ---------- LINKS --------*/
+a:link{
+    font-family: var(--font-subheader) !important;
+    font-size: 14px;
+    color: #cf4ba8;
+    text-decoration: none;
+}
+a:visited{
+    color: #cf4ba8;
+}
+a:focus{
+    color: red;
+}
+a:hover{
+    color: #844bcf;
+    transition: all 1s linear;
+}
+
+a[inert]{
+    text-decoration-line: line-through;
+}
+
+/*---------- Figures ------------*/
+
+.figureleft{
+    margin: 0.5em 1.4em 1.3em 0;
+    clear: left;
+    float: left;
+}
+
+.figureleft img, .figureright img{
+    height: auto;
+    max-width: 100%;
+    min-width: 70%;
+}
+
+.figureright{
+    margin: 0.5em 0 1.3em 1.4em;
+    clear: right;
+    float: right;
+}
+
+/* -------- Fuentes -----------*/
 :root {
     --font-main: "KPDH Main Font";
     --font-header: "KPDH Header Font";
@@ -134,37 +248,16 @@ td {
     font-display: swap
 }
 
-h1,
-h2 {
+h1, h2 {
     font-family: var(--font-main) !important;
     color: darkmagenta;
     margin: 15px;
     font-weight: normal;
 }
 
-h3,
-h4,
-h5,
-h6 {
+h3, h4, h5, h6 {
     font-family: var(--font-header) !important;
     font-weight: normal;
-}
-
-a:link{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
-    color: #cf4ba8;
-    text-decoration: none;
-}
-a:visited{
-    color: #cf4ba8;
-}
-a:focus{
-    color: red;
-}
-a:hover{
-    color: #844bcf;
-    transition: all 1s linear;
 }
 
 
