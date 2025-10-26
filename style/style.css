@@ -24,10 +24,6 @@ b{
     color: purple;
 }
 
-q{
-    font-style: italic;
-}
-
 nav {
     text-align: right;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -84,6 +80,7 @@ td {
     border-radius: 10px;
     border-color: blueviolet;
     border-width: 10px;
+    width: 98%;
 }
 
 .capsula:hover{
@@ -154,9 +151,24 @@ figcaption{
     margin: 10px;
 }
 
+/* -------- HOME ---------*/
+
 .home{
     display: flex;
+    flex-direction:row-reverse;
 }
+
+.homeimage{
+    margin: 30px;
+    max-width: 30%;
+    min-width: 20%;
+}
+
+.hometext{
+    width: 70%;
+}
+
+
 
 
 /* --------- IFRAME ---------*/
@@ -285,6 +297,7 @@ h3, h4, h5, h6 {
 
 .quote {
     max-width: 75%;
+    padding: 2rem;
     font-style: italic;
     margin: auto;
     margin-top: 20px !important;
@@ -293,7 +306,7 @@ h3, h4, h5, h6 {
 }
 
 .quote cite{
-    margin-left:60%;
+    margin-left:75%;
     margin-bottom: 1em;
     font-size: 13px;
     width: 60%;
@@ -313,14 +326,14 @@ h3, h4, h5, h6 {
 
 .quote p::after {
     content: "”";
-    bottom: -1rem;
-    right: -1.5rem;
+    bottom: -2rem;
+    right: -2.5rem;
     line-height: 1;
 }
 
 .quote  p::before {
     content: "“";
     top: -1rem;
-    left: -1.5rem;
+    left: -2.5rem;
     line-height: 1;
 }
