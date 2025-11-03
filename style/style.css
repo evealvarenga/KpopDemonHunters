@@ -168,6 +168,43 @@ figcaption{
     width: 70%;
 }
 
+/* ---------- FORM -----------*/
+
+form{
+    gap: 15px;
+    
+}
+input {
+    border-color: #6d4f7a; 
+}
+
+input#lname, input#fname, input#email, input#message{
+    border-color: hsl(282, 84%, 54%);
+    border-radius: 2rem;
+    padding: 5px;
+    width: 95%;
+    margin: 10px;
+}
+
+input#submit, input#reset{
+    font-family: var(--font-subheader) !important;
+    border-radius: 2rem;
+    margin: 10px;
+    display:flexbox;
+}
+
+input#submit{
+    border-color: #cf4ba8;
+    background-color: #ffffff;
+}
+
+input#submit:hover{
+    background-color: #df64ac;
+}
+
+label{
+    font-family: var(--font-subheader) !important;
+}
 
 
 
