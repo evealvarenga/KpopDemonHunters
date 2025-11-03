@@ -195,15 +195,33 @@ input#submit, input#reset{
 
 input#submit{
     border-color: #cf4ba8;
-    background-color: #ffffff;
+    background-color: hwb(310 41% 15%);
+    color: white;
+    width: 150px;
+    height: 30px;
 }
 
 input#submit:hover{
-    background-color: #df64ac;
+    background-color: hwb(0 100% 0%);
+    color: hsl(310, 75%, 76%);
+}
+
+input#reset{
+    border-color: #cf4ba8;
+    width: 150px;
+    height: 30px;
+}
+
+input#reset:hover{
+    color: #cf4ba8;
 }
 
 label{
     font-family: var(--font-subheader) !important;
+}
+
+input#message{
+    height: 100px;
 }
 
 
