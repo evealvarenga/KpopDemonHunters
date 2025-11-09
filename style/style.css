@@ -141,13 +141,17 @@ figcaption{
 }
 
 .video{
-    display: inline-flexbox;
-    flex-wrap: wrap;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 15px;
 }
 
 .video img {
     border-radius: 10px;
-    max-width: 20%;
+    width: 100%;
+    height: auto;
     margin: 10px;
 }
 
@@ -168,6 +172,32 @@ figcaption{
     width: 70%;
 }
 
+.personajes-home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.land-error-confirm img{
+    margin: 30px;
+    max-width: 50%;
+    min-width: 20%;
+}
+
+.land-error-confirm{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.error-confirm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 /* ---------- FORM -----------*/
 
 form{
@@ -178,7 +208,7 @@ input {
     border-color: #6d4f7a; 
 }
 
-input#lname, input#fname, input#email, input#message{
+input#lname, input#fname, input#email, input#message, textarea{
     border-color: hsl(282, 84%, 54%);
     border-radius: 2rem;
     padding: 5px;
@@ -186,11 +216,28 @@ input#lname, input#fname, input#email, input#message{
     margin: 10px;
 }
 
+textarea{
+    height: 150px;
+    padding: 10px;
+    resize: vertical;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-clip:border-box;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 input#submit, input#reset{
     font-family: var(--font-subheader) !important;
     border-radius: 2rem;
     margin: 10px;
-    display:flexbox;
+    text-align: center;
 }
 
 input#submit{
@@ -220,17 +267,16 @@ label{
     font-family: var(--font-subheader) !important;
 }
 
-input#message{
-    height: 100px;
-}
-
 
 
 /* --------- IFRAME ---------*/
 iframe{
-    width: 88%;
+    display: block;
+    width: 90%;
     aspect-ratio: 16 / 9;
     border-radius: 10px;
+    margin: 0 auto;
+    margin-left: 5%;
 }
 
 /* ---------- LINKS --------*/
