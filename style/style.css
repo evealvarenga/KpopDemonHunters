@@ -467,3 +467,128 @@ h3, h4, h5, h6 {
     left: -2.5rem;
     line-height: 1;
 }
+
+/* ----------- QUERY DE TABLET -------------*/
+@media (max-width: 768px) {
+
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navegador nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    main {
+        margin: 15px;
+    }
+
+    .quote {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+    .video {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reproductor {
+        grid-template-columns: 1fr;
+    }
+
+    .land-error-confirm {
+        grid-template-columns: 1fr;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homeimage {
+        max-width: 60%;
+    }
+
+    .hometext {
+        width: 100%;
+    }
+}
+
+/* ----------- QUERY DE CELULAR -------------*/
+@media (max-width: 600px) {
+
+    body {
+        margin: 0;
+    }
+
+    header {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .titulo h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .navegador nav {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .figureleft,
+    .figureright {
+        float: none;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    .figureleft img,
+    .figureright img {
+        min-width: 100%;
+    }
+
+    .quote {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .quote cite {
+        margin-left: 0;
+        width: 100%;
+        text-align: right;
+    }
+
+    .video {
+        grid-template-columns: 1fr;
+    }
+
+    iframe {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
